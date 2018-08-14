@@ -1,0 +1,38 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="login-container">
+        <form padding [formGroup]="signupForm" (submit)="signup()" novalide>
+          <ion-item>
+            <ion-input type="text" formControlName="firstName" placeholder="Nome" clearInput clearOnEdit="false"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" formControlName="lastName" placeholder="Sobrenome" clearInput clearOnEdit="false"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="email" formControlName="email" placeholder="Email" clearInput clearOnEdit="false"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" formControlName="password" placeholder="Senha" clearInput clearOnEdit="false"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" formControlName="passwordConfirmation" placeholder="Confirmação de Senha" clearInput clearOnEdit="false"></ion-input>
+          </ion-item>
+          <button ion-button block outline color="light" [disabled]="!signupForm.valid" class="login-button"> Criar Conta </button>
+        </form>
+      </div>
+
+</ion-content>

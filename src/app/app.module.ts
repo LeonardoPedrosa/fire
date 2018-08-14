@@ -1,3 +1,4 @@
+import { SignupPage } from './../pages/signup/signup';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -15,19 +16,22 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
 export const firebaseConfig = {
-  apiKey: "xxxxx",
-  authDomain: 'xxxxx',
-  databaseURL: 'xxxxx',
-  storageBucket: 'xxxxx',
-  messagingSenderId: 'xxxxx'
+  apiKey: "AIzaSyA7Y7O1Zxnp3VmuggXElDTRVBY98B24koc",
+  authDomain: "fire-de6c3.firebaseapp.com",
+  databaseURL: "https://fire-de6c3.firebaseio.com",
+  projectId: "fire-de6c3",
+  storageBucket: "fire-de6c3.appspot.com",
+  messagingSenderId: "784098511844"
 }
+
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ export const firebaseConfig = {
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    SignupPage
   ],
   providers: [
     StatusBar,
